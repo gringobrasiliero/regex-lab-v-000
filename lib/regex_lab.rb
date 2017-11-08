@@ -14,7 +14,7 @@ end
 def words_five_letters_long(text)
 new_array=[]
 text.split.each do |word|
-  new_array << word if word.length = 5
+  new_array << word if word.length == 5
 end
 new_array
 end
