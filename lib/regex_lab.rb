@@ -12,7 +12,11 @@ new_array
 end
 
 def words_five_letters_long(text)
-
+new_array=[]
+text.split.each do |word|
+  new_array << word if word.grep(/^\w{5}\s/)
+end
+new_array
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
