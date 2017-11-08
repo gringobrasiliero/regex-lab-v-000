@@ -20,9 +20,12 @@ new_array
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-text.match(/\A[A-Z]/) && text.match(/\z[.?!]/) ? true: false
+if text.match(/\A[A-Z]/) && text.match(/\z[.?!]/)
+  return true
+else
+  false
+  end
 end
-
 def valid_phone_number?(phone)
 
 end
