@@ -20,11 +20,7 @@ new_array
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-new_array=[]
-text.split.each do |word|
-  new_array << word if word.grep(/(A-Z)/) && word.grep(/(.!?)/) ? true:false
-end
-new_array
+word.match(/\A[A-Z]/) && word.match(/\z[.?!]/) ? true:false
 end
 
 def valid_phone_number?(phone)
